@@ -1,0 +1,11 @@
+{
+    "general": {
+        "temperature_scales": ["celsius", "fahrenheit", "kelvin"]
+    },
+    "API": {
+        "BASE_URL": "https://api.met.no/weatherapi/locationforecast/2.0/compact/"
+    },
+    "query_options": {
+        "temperature_scale": ["celsius"]
+    }
+}

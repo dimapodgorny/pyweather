@@ -1,0 +1,20 @@
+/* class styling */
+.container--border {
+    border: solid white;
+}
+
+/* query bar */
+#query_page {
+    align-horizontal: center;
+    width: 60%;
+}
+
+#query_bar {
+    align-horizontal: center;
+    width: 100%;
+    height: auto;
+}
+
+#query_input {
+    width: 70%;
+}

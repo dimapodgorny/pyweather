@@ -1,0 +1,11 @@
+# [build-system]
+# requires = ["textual==6.1.0"]
+
+[project]
+name = "pyWeather"
+version = "1.0"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.urls]
+homepage = "https://github.com/dimapodgorny/pyweather"
