@@ -18,3 +18,8 @@
 #query_input {
     width: 70%;
 }
+
+/* Configs section */
+#config_temperature_unit_selection {
+    width: 70%;
+}

@@ -1,11 +1,40 @@
-# [build-system]
-# requires = ["textual==6.1.0"]
+[build-system]
+requires = ["setuptools>=80.9.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyWeather"
-version = "1.0"
-requires-python = ">=3.10"
+version = "0.0"
+description = "Simple Python TUI built on Textual that fetches weather data from MET Norway API using queries."
+requires-python = ">=3.11"
 readme = "README.md"
+keywords = ["weather", "met.no", "textual", "cli", "tui"]
+
+dependencies = [
+    "certifi==2025.8.3",
+    "charset-normalizer==3.4.3",
+    "dataclasses==0.6",
+    "geographiclib==2.1",
+    "geopy==2.4.1",
+    "idna==3.10",
+    "linkify-it-py==2.0.3",
+    "markdown-it-py==4.0.0",
+    "mdit-py-plugins==0.5.0",
+    "mdurl==0.1.2",
+    "pathlib==1.0.1",
+    "platformdirs==4.4.0",
+    "Pygments==2.19.2",
+    "requests==2.32.5",
+    "rich==14.1.0",
+    "setuptools==80.9.0",
+    "textual==6.1.0",
+    "tomli==2.2.1",
+    "typing==3.7.4.3",
+    "typing_extensions==4.15.0",
+    "uc-micro-py==1.0.3",
+    "urllib3==2.5.0",
+]
 
 [project.urls]
-homepage = "https://github.com/dimapodgorny/pyweather"
+Homepage = "https://github.com/dimapodgorny/pyweather"
+Issues = "https://github.com/yourusername/pyweather/issues"

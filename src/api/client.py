@@ -12,7 +12,6 @@ def request_forecast_from_coordinates(lat: float, lon: float):
         "lat": lat,
         "lon": lon
     }
-    print(url, headers, params)
     
     response = requests.get(url, headers=headers, params=params)
 
