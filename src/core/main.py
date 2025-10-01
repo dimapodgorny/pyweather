@@ -120,18 +120,20 @@ class Dashboard(Screen):
             
         self.forecast_table.clear()
         
+        temperature_unit_symbol: str = helpers.Configs.get_specific("temperature_unit")[0]
+        
         modeled_wdata = api.parse_forecast(weather_data)
         for timeserie in modeled_wdata.timeseries:
             serie_details = timeserie.details
             self.forecast_table.add_row(
-                timeserie.date, # Date
-                timeserie.time, # Time
-                serie_details.weather, # Weather type (weather)
-                serie_details.air_temperature, # Temperature (temp)
-                serie_details.precipitation_amount, # Precipitation (rain (mm))
-                serie_details.wind_speed, # Wind speed (wind spd)
-                serie_details.wind_direction, # Wind direction (wind °)
-                serie_details.relative_humidity # Humidity (humidity (hPa))
+                timeserie.date,
+                timeserie.time,
+                serie_details.weather,
+                str(serie_details.air_temperature) + temperature_unit_symbol,
+                serie_details.precipitation_amount,
+                serie_details.wind_speed,
+                serie_details.wind_direction, 
+                serie_details.relative_humidity
             )
         
         

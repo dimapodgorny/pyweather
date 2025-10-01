@@ -1,1 +1,1 @@
-{"general": {"temperature_units": ["celsius", "fahrenheit", "kelvin"]}, "API": {"BASE_URL": "https://api.met.no/weatherapi/locationforecast/2.0/compact/"}, "settings": {"temperature_unit": {"value": "celsius", "default": "celsius"}}}
+{"general": {"temperature_units": ["celsius", "fahrenheit", "kelvin"]}, "API": {"BASE_URL": "https://api.met.no/weatherapi/locationforecast/2.0/compact/"}, "settings": {"temperature_unit": {"value": "fahrenheit", "default": "celsius"}}}
